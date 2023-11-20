@@ -1,0 +1,8 @@
+.primary-btn{
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--color-white) ;
+    border: none;
+    border-radius: 3px;
+    margin: 2px;
+}

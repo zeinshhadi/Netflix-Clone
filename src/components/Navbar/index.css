@@ -1,0 +1,7 @@
+.navbar{
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    /* background-color: var(--dark-bg); */
+    align-items: center;
+}
