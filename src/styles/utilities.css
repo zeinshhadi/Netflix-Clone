@@ -6,14 +6,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   }
   :root{
       --black-color:#000;
-      --dark-bg:rgb(9%, 9%, 9%);
-      --primary-color:rgb(96%, 2%, 7%);
-      --gray-color:rgb(45%, 45%, 40%);
-      --gray-bg:rgb(25%, 25%, 25%);
-      --hover-gray-color:rgb(18%, 18%, 18%);
+      --dark-bg:rgb(9, 9, 9);
+      --primary-color:rgb(96, 2, 7);
+      --gray-bg:rgb(45, 45, 45);
+      --gray-color:rgb(25, 25, 25);
+      --hover-gray-color:rgb(65,65,65);
       --gradient-bg:linear-gradient(90deg,#333 5%,#181818 95%);
       --color-white:#fff;
   
@@ -64,4 +65,14 @@
   border-radius: 3px solid var(--gray-color);
 }
 
+.bg-dark{
+  background-color: var(--dark-bg);
+}
+
+.text-white{
+  color: var(--color-white);
+}
+.bg-gray{
+  background-color: var(--gray-bg);
+}
 

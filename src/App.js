@@ -3,17 +3,29 @@ import GetStartedForm from './components/GetStartedForm';
 import Navbar from './components/Navbar';
 import './styles/utilities.css';
 import './styles/index.css';
+import FAQs from './components/FAQs';
 
+import { faqData } from './staticData/faq';
 
 function App() {
   return (
     <div className="App">
 
       <div className='container'>
-      <Navbar />
+      {/* <Navbar /> */}
 
-        <Button text="hello" />
-        <GetStartedForm />
+        {/* <Button text="hello" /> */}
+        {/* <GetStartedForm /> */}
+
+
+      
+      </div>
+
+      <div className='container'>
+        {faqData.map((faq)=>{return(<>
+          <FAQs {...faq}/>
+        </>)})}
+
       </div>
 
     </div>
