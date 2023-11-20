@@ -1,13 +1,12 @@
-import React from 'react'
-import './index.css';
+import React from "react";
+import "./index.css";
 
-const Button = ({text}) => {
+const Button = ({ text }) => {
   return (
     <div>
-        <button className='primary-btn'>{text}</button>
+      <button className="primary-btn">{text}</button>
     </div>
-   
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
