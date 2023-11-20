@@ -12,18 +12,23 @@ function App() {
   const commercialSectionComponents = [
     {
       text: "Enjoy on your TV",
+      description: "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
       image: tv,
     },
     {
       text: "Download your shows to watch offline",
+      description: "Save your favorites easily and always have something to watch.",
       image: phone,
     },
     {
       text: "Watch everywhere",
+      description: "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
       image: pile,
     },
     {
       text: "Create profiles for kids",
+      description:
+        "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
       image: kids,
     },
   ];
@@ -34,13 +39,16 @@ function App() {
         <Navbar />
         <Button text="hello" />
         <GetStartedForm />
-        {commercialSectionComponents.map((element, index) =>
-          index % 2 === 0 ? (
-            <ComSection key={index} text={element.text} image={element.image} direction={"row"} />
-          ) : (
-            <ComSection key={index} text={element.text} image={element.image} direction={"reverse-row"} />
-          )
-        )}
+        {commercialSectionComponents.map((element, index) => {
+          return (
+            <ComSection
+              text={element.text}
+              image={element.image}
+              description={element.description}
+              direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
+            />
+          );
+        })}
       </div>
     </div>
   );
