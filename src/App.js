@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
 
-
       <div className='container'>
+      <Navbar />
+
         <Button text="hello" />
         <GetStartedForm />
       </div>

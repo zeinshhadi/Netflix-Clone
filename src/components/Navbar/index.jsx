@@ -4,8 +4,13 @@ import './index.css'
 import Button from '../Button'
 const Navbar = () => {
   return (
-    <div className={`navbar`}>
+    <div className={`flex space-between  navbar`}>
+       <div>
        Navbar
+       </div>
+       <div>
+       Navbar
+       </div>
 
     </div>
   )
