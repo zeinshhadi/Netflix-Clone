@@ -2,5 +2,10 @@
   width: 200px;
   height: 200px;
 }
-.sec-title {
+body {
+  background-color: black;
+}
+.sec-title,
+.sec-desc {
+  color: white;
 }
