@@ -9,3 +9,7 @@ body {
 .sec-desc {
   color: white;
 }
+
+.border-t {
+  border-bottom: 10px solid var(--hover-gray-color);
+}
