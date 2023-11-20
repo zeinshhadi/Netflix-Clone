@@ -11,7 +11,7 @@
   :root{
       --black-color:#000;
       --dark-bg:rgb(9, 9, 9);
-      --primary-color:rgb(96, 2, 7);
+      --primary-color:rgb(229, 9, 20);
       --gray-bg:rgb(45, 45, 45);
       --gray-color:rgb(25, 25, 25);
       --hover-gray-color:rgb(65,65,65);
@@ -24,6 +24,7 @@
   }
 .container{
     max-width: 1340px;
+    width: 100%;
     margin: 0 auto;
 /* background-color: gray; */
 }
@@ -62,7 +63,7 @@
   font-weight: bold;
 }
 .rounded-1{
-  border-radius: 3px solid var(--gray-color);
+  border-radius: 3px;
 }
 
 .bg-dark{

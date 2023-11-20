@@ -15,17 +15,20 @@ function App() {
       {/* <Navbar /> */}
 
         {/* <Button text="hello" /> */}
-        {/* <GetStartedForm /> */}
+       
 
 
-      
-      </div>
-
-      <div className='container'>
+        <div className='container'>
         {faqData.map((faq)=>{return(<>
           <FAQs {...faq}/>
         </>)})}
 
+      </div>
+      </div>
+
+     
+      <div className="container">
+        <GetStartedForm />
       </div>
 
     </div>
