@@ -1,54 +1,46 @@
-
-
-.get-started-section{
-width: 100%;
-margin:  45px 0;
+.get-started-section {
+  width: 100%;
+  margin: 45px 0;
 }
-.form-title{
-    font-size: 18px;
+.form-title {
+  font-size: 18px;
 }
-.get-started-form{
-    margin-top: 16px;
-width: 50%;
-gap: 10px;
-position: relative;
+.get-started-form {
+  margin-top: 16px;
+  width: 50%;
+  gap: 10px;
+  position: relative;
 }
-.input-group{
-    width: 70%;
+.input-group {
+  width: 70%;
 }
-.email-input{
-    width: 100%;
-    height: 60px;
-    color: white;
-    border: 3px solid var(--gray-color);
-    background: transparent;
-    font-size: 16px;
-    padding: 15px;
-    cursor: pointer;
-    /* transition: transform 300ms ease-in-out ; */
-
+.email-input {
+  width: 100%;
+  height: 60px;
+  color: white;
+  border: 3px solid var(--gray-color);
+  background: transparent;
+  font-size: 16px;
+  padding: 15px 0 0px 15px;
+  cursor: pointer;
 }
 
-label{
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translate(0,-50%);
-    opacity: 0.3;
-    /* height: 40px; */
-    transition: all 300ms ease-in-out ;
-
+label {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0.3;
+  transition: all 300ms ease-in-out;
 }
 
-.email-input:focus + label{
-top: 15px; 
- opacity: 1;
- font-size: 12px;
+.email-input:focus + label {
+  top: 15px;
+  opacity: 1;
+  font-size: 12px;
 }
-.get-started{
-    height: 60px;
-    font-size: 24px;
-    font-weight: 500;
-    
-    
+.get-started {
+  height: 60px;
+  font-size: 24px;
+  font-weight: 500;
 }
