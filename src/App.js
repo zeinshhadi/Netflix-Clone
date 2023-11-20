@@ -8,6 +8,7 @@ import tv from "../src/images/tv.png";
 import phone from "../src/images/mobile-0819.jpg";
 import pile from "../src/images/device-pile.png";
 import kids from "../src/images/kids.png";
+import Carousel from "./components/Carousel";
 
 function App() {
   const commercialSectionComponents = [
@@ -42,6 +43,7 @@ function App() {
             <ComSection key={index} text={element.text} image={element.image} direction={"reverse-row"} />
           )
         )}
+        <Carousel />
       </div>
     </div>
   );
