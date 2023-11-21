@@ -32,3 +32,7 @@
   transform: translate(0, 77px);
   right: 0px;
 }
+
+.card-container {
+  max-width: 50%;
+}
