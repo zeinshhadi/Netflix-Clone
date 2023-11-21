@@ -41,7 +41,7 @@ function FooterWrapper({ children, ...restProps }) {
   );
 }
 
-function Footer() {
+function FooterCompound() {
   return (
     <FooterWrapper>
       <FooterTitle>Questions? Contact us.</FooterTitle>

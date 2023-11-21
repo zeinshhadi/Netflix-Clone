@@ -8,7 +8,8 @@ import tv from "../src/images/tv.png";
 import phone from "../src/images/mobile-0819.jpg";
 import pile from "../src/images/device-pile.png";
 import kids from "../src/images/kids.png";
-import Footer from ".components/Footer";
+
+import FooterCompound from "./components/Footer/Footer.jsx";
 function App() {
   const commercialSectionComponents = [
     {
@@ -43,7 +44,7 @@ function App() {
           )
         )}
       </div>
-      <Footer/>
+      <FooterCompound />
     </div>
   );
 }
