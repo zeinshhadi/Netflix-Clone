@@ -5,42 +5,48 @@ import "./styles/utilities.css";
 import "./styles/index.css";
 import FAQs from "./components/FAQs";
 import ComSection from "./components/Commercial";
-import tv from "./images/tv.png";
-
 import { faqData } from "./staticData/faq";
 import Hero from "./components/Hero";
-
+import tv from "./images/tv.png";
+import mobile from "./images/mobile-0819.jpg";
+import pile from "./images/device-pile.png";
+import kids from "./images/kids.png";
 function App() {
   const commercialSectionComponents = [
     {
       text: "Enjoy on your TV",
+      desc: "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
       image: tv,
     },
     {
       text: "Download your shows to watch offline",
-      image: "./images/mobile-0819.jpg",
+      desc: "Save your favorites easily and always have something to watch.",
+      image: mobile,
     },
     {
       text: "Watch everywhere",
-      image: "./images/device-pile.png",
+      desc: "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+      image: pile,
     },
     {
       text: "Create profiles for kids",
-      image: "../../images/kids.png",
+      desc: "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+      image: kids,
     },
   ];
   return (
     <div className="App">
       <Hero />
+      {commercialSectionComponents.map((element, index) => (
+        <ComSection
+          key={index}
+          text={element.text}
+          description={element.desc}
+          image={element.image}
+          direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
+        />
+      ))}
       <div className="container">
-        {commercialSectionComponents.map((element, index) => (
-          <ComSection
-            key={index}
-            text={element.text}
-            image={element.image}
-            direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
-          />
-        ))}
         <div className="container">
           <div className="primary-title text-white text-center">Frequently Asked Questions</div>
           {faqData.map((faq) => {
