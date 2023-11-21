@@ -1,38 +1,29 @@
-.card {
-  background-color: grey;
-  padding: 5%;
-  width: 300px;
-  height: 149px;
-}
-
-.icon {
-  flex-grow: 0;
-  flex-shrink: 0;
-  z-index: 10;
-  margin: var(--img-gap) 0;
-  width: var(--handle-size);
+.carousel-container{
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color:  transparent transparent;
   cursor: pointer;
-  font-size: 2rem;
-  font-weight: bold;
-  color: red;
-  line-height: 0;
 }
 
-.before {
-  position: absolute;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  transform: translate(-25px, 77px);
+.carousel-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-.after {
-  position: absolute;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  transform: translate(0, 77px);
-  right: 0px;
+.carousel-container::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
-.card-container {
-  max-width: 50%;
+.carousel-container::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.left-icon,.right-icon{
+  padding: 20px;
 }

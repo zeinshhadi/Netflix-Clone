@@ -11,6 +11,9 @@ import tv from "./images/tv.png";
 import mobile from "./images/mobile-0819.jpg";
 import pile from "./images/device-pile.png";
 import kids from "./images/kids.png";
+import MovieCard from "./components/MovieCard";
+import img from './images/bg-movie.jpg'
+import Carousel from "./components/Carousel";
 function App() {
   const commercialSectionComponents = [
     {
@@ -58,7 +61,16 @@ function App() {
           })}
         </div>
         <GetStartedForm />
+
+       
+        
+      
+     
+        
+
       </div>
+      <Carousel/>
+
     </div>
   );
 }
