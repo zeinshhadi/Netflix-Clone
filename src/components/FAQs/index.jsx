@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import "./index.css";
 const FAQs = ({ question, answer }) => {
@@ -8,12 +8,6 @@ const FAQs = ({ question, answer }) => {
     if (hide) setHide(false);
     else setHide(true);
   };
-
-<<<<<<< HEAD
-  useEffect(() => {}, [hide]);
-=======
- 
->>>>>>> 42fa89b45ed86a02ca864b8b4fe7075767479da1
 
   return (
     <div className="faq-card text-white">
