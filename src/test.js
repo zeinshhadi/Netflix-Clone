@@ -4,12 +4,8 @@ import Navbar from "./components/Navbar";
 import "./styles/utilities.css";
 import "./styles/index.css";
 import ComSection from "./components/Commercial";
-import tv from "../src/images/tv.png";
-import phone from "../src/images/mobile-0819.jpg";
-import pile from "../src/images/device-pile.png";
-import kids from "../src/images/kids.png";
-import Carousel from "./components/Carousel";
-
+import tv from "./images/tv.png";
+import FAQs from "./components/FAQs";
 function App() {
   const commercialSectionComponents = [
     {
@@ -18,32 +14,33 @@ function App() {
     },
     {
       text: "Download your shows to watch offline",
-      image: phone,
+      image: "./images/mobile-0819.jpg",
     },
     {
       text: "Watch everywhere",
-      image: pile,
+      image: "./images/device-pile.png",
     },
     {
       text: "Create profiles for kids",
-      image: kids,
+      image: "../../images/kids.png",
     },
   ];
-
   return (
     <div className="App">
       <div className="container">
         <Navbar />
+
         <Button text="hello" />
         <GetStartedForm />
-        {commercialSectionComponents.map((element, index) =>
-          index % 2 === 0 ? (
-            <ComSection key={index} text={element.text} image={element.image} direction={"row"} />
-          ) : (
-            <ComSection key={index} text={element.text} image={element.image} direction={"reverse-row"} />
-          )
-        )}
-        <Carousel />
+        <FAQs />
+        {commercialSectionComponents.map((element, index) => (
+          <ComSection
+            key={index}
+            text={element.text}
+            image={element.image}
+            direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
+          />
+        ))}
       </div>
     </div>
   );
