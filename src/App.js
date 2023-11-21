@@ -33,25 +33,7 @@ function App() {
     },
   ];
 
-  return (
-    <div className="App">
-      <div className="container">
-        <Navbar />
-        <Button text="hello" />
-        <GetStartedForm />
-        {commercialSectionComponents.map((element, index) => {
-          return (
-            <ComSection
-              text={element.text}
-              image={element.image}
-              description={element.description}
-              direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
