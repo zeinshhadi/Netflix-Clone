@@ -1,0 +1,15 @@
+.sec-image img {
+  width: 600px;
+  height: 440px;
+}
+body {
+  background-color: black;
+}
+.sec-title,
+.sec-desc {
+  color: white;
+}
+
+.border-t {
+  border-bottom: 10px solid var(--hover-gray-color);
+}

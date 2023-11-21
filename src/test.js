@@ -3,13 +3,9 @@ import GetStartedForm from "./components/GetStartedForm";
 import Navbar from "./components/Navbar";
 import "./styles/utilities.css";
 import "./styles/index.css";
-import FAQs from "./components/FAQs";
 import ComSection from "./components/Commercial";
 import tv from "./images/tv.png";
-
-import { faqData } from "./staticData/faq";
-import Hero from "./components/Hero";
-
+import FAQs from "./components/FAQs";
 function App() {
   const commercialSectionComponents = [
     {
@@ -31,8 +27,12 @@ function App() {
   ];
   return (
     <div className="App">
-      <Hero />
       <div className="container">
+        <Navbar />
+
+        <Button text="hello" />
+        <GetStartedForm />
+        <FAQs />
         {commercialSectionComponents.map((element, index) => (
           <ComSection
             key={index}
@@ -41,17 +41,6 @@ function App() {
             direction={`${index % 2 === 0 ? "row" : "reverse-row"}`}
           />
         ))}
-        <div className="container">
-          <div className="primary-title text-white text-center">Frequently Asked Questions</div>
-          {faqData.map((faq) => {
-            return (
-              <>
-                <FAQs {...faq} />
-              </>
-            );
-          })}
-        </div>
-        <GetStartedForm />
       </div>
     </div>
   );

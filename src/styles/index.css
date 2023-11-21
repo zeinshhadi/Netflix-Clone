@@ -1,13 +1,8 @@
-
-body{
-    background-color: var(--black-color)
+body {
+  background-color: var(--black-color);
 }
-
-
-
-
-.primary-title{
-    font-size: 32px;
-    font-weight: 900;
-    padding: 40px 0 20px 0px;
+.primary-title {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 40px 0 20px 0px;
 }
