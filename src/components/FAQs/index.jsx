@@ -9,7 +9,11 @@ const FAQs = ({ question, answer }) => {
     else setHide(true);
   };
 
+<<<<<<< HEAD
   useEffect(() => {}, [hide]);
+=======
+ 
+>>>>>>> 42fa89b45ed86a02ca864b8b4fe7075767479da1
 
   return (
     <div className="faq-card text-white">

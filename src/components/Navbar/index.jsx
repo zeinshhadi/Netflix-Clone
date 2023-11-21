@@ -4,12 +4,12 @@ import './index.css'
 import Button from '../Button'
 const Navbar = () => {
   return (
-    <div className={`flex space-between  navbar`}>
-       <div>
-       Navbar
+    <div className={`d-flex space-between text-white  navbar`}>
+       <div className='img-container'>
+       <img src={logo}  className='logo' alt="" />
        </div>
        <div>
-       Navbar
+        <Button  text='Sign In'/>
        </div>
 
     </div>

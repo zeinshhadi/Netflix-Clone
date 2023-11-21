@@ -1,10 +1,10 @@
 import React from 'react'
 import './index.css';
 
-const Button = ({text}) => {
+const Button = ({text,className,icon}) => {
   return (
     <div>
-        <button className='primary-btn'>{text}</button>
+        <button className={`d-flex  center primary-btn ${className}`}>{text}{icon? <img src={icon}/>:''}</button>
     </div>
    
   )
