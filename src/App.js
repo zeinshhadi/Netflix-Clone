@@ -9,7 +9,7 @@ import phone from "../src/images/mobile-0819.jpg";
 import pile from "../src/images/device-pile.png";
 import kids from "../src/images/kids.png";
 
-import FooterCompound from "./components/Footer/Footer.jsx";
+import FooterCompound from "./components/Footer";
 function App() {
   const commercialSectionComponents = [
     {
