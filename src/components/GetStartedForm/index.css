@@ -30,7 +30,8 @@ label {
   left: 25px;
   top: 50%;
   transform: translate(0, -50%);
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  color: rgb(140, 143, 147);
   transition: all 300ms ease-in-out;
 }
 

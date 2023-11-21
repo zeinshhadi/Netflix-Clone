@@ -6,10 +6,13 @@ import "./styles/index.css";
 import FAQs from "./components/FAQs";
 
 import { faqData } from "./staticData/faq";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App">
+
+      <Hero />
       <div className="container">
         {/* <Navbar /> */}
 

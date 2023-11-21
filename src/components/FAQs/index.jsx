@@ -10,9 +10,7 @@ const FAQs = ({ question, answer }) => {
     else setHide(true);
   };
 
-  useEffect(() => {
-   
-  }, [hide]);
+ 
 
   return (
     <div className="faq-card text-white" >
