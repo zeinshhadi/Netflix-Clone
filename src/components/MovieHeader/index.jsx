@@ -10,7 +10,7 @@ const MovieHeader = () => {
 
   return (
     <>
-      <div style={style}></div>
+      <div style={{ style }}></div>
       <div className="text-white d-flex center ">eloozz</div>
     </>
   );
