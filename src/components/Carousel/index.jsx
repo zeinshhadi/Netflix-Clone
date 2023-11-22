@@ -30,14 +30,14 @@ const Carousel = ({ genreTitle }) => {
         }}>
         <div className={`left-icon ${scrollLeftValue <= 0 ? "d-none" : "d-block"}`}></div>
       </div>
-      <div>
-        <div className="text-white">{genreTitle}</div>
+      {/* <div> */}
+        {/* <div className="text-white">{genreTitle}</div> */}
         <div className="carousel-container d-flex row gap" id="carousel">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 2, 2, 2, 2].map((element, index) => {
             return <MovieCard text={element} key={index} />;
           })}
         </div>
-      </div>
+      {/* </div> */}
 
       <div
         className="icon text-white"
