@@ -1,7 +1,13 @@
 import React from "react";
 import "./index.css";
+import Carousel from "../../components/Carousel";
+
 const MovieDetailsPage = () => {
-  return <div>MovieDetailsPage</div>;
+  return (
+    <div>
+      <Carousel />
+    </div>
+  );
 };
 
 export default MovieDetailsPage;

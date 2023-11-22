@@ -1,28 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MovieCard from '../MovieCard'
 import './index.css'
 
 const Carousel = () => {
-  const handleScroll=()=>{
-
-  }
+  const [scrollLeftValue,setscrollLeftValue]=useState(0)
 
   const handleLeftClick=()=>{
-    
-    scroll(-1200)
+    setscrollLeftValue(-1200)
+    scroll(scrollLeftValue)
    
   }
   const handleRightClick=()=>{
-    scroll(1200)
+    setscrollLeftValue(1200)
+    scroll(scrollLeftValue)
 
 
   }
   const scroll=(value)=>{
     document.getElementById('carousel').scrollBy({
-      top: 0, 
+       
       left:value, 
       behavior: 'smooth'
     })  
+    // console.log(document.getElementById('carousel').scrollLeft);
 
   }
 
@@ -31,10 +31,10 @@ const Carousel = () => {
 
   return (
     <div className='d-flex align-items-center' >
-      <div className='icon text-white' onClick={()=>{handleLeftClick()}}>
-        <div className="left-icon"></div>
+      <div className={`icon text-white`} onClick={()=>{handleLeftClick()}}>
+        <div className={`left-icon ${scrollLeftValue<=0?'d-none':'d-block'}`} ></div>
       </div>
-      <div className="carousel-container d-flex row gap" id='carousel' onScroll={()=>{handleScroll()}}>
+      <div className="carousel-container d-flex row gap" id='carousel' >
         {
           [1,2,3,4,5,6,7,8,9,10,2,2,2,2,2].map((element,index)=>{
 
