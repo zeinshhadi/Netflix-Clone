@@ -31,7 +31,7 @@ const MoviesPage = () => {
     fetchData();
   }, []);
 
-  // console.log(genreData)
+  console.log(genreData)
   return (
     <div className="container">
       <Navbar />
@@ -46,9 +46,9 @@ const MoviesPage = () => {
         {genreData.map((gener) => {
           return (
             <div>
-              <div className="text-white">{gener.name}</div>
+              {/* <div className="text-white">{gener.name}</div> */}
 
-              <Carousel />
+              <Carousel genreID={gener.id} genreTitle={gener.name} />
             </div>
           );
         })}
