@@ -18,7 +18,7 @@ const MovieDetailsPage = () => {
       }
     };
     const fetchData = async () => {
-    fetch('https://api.themoviedb.org/3/movie/299054?language=en-US', options)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
       .then(response => response.json())
       .then(response =>
         {
