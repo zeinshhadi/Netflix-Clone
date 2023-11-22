@@ -18,10 +18,7 @@ const MoviesPage = () => {
     };
 
     const fetchData = async () => {
-      const response = await fetch(
-        "https://api.themoviedb.org/3/genre/movie/list?language=en",
-        options
-      )
+      const response = await fetch("https://api.themoviedb.org/3/genre/movie/list?language=en", options)
         .then((response) => response.json())
         .then((response) => {
           setGenreData(response.genres);
@@ -41,9 +38,8 @@ const MoviesPage = () => {
 
       <div className="primary-title text-white">Movies</div>
       <div className="movies-sub text-white">
-        Movies move us like nothing else can, whether they’re scary, funny,
-        dramatic, romantic or anywhere in-between. So many titles, so much to
-        experience.
+        Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between.
+        So many titles, so much to experience.
       </div>
 
       <div className="container">
