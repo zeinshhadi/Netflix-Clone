@@ -10,8 +10,9 @@ const options = {
 export const fetchData = async () => {
   const response = await fetch("https://api.themoviedb.org/3/genre/movie/list?language=en", options)
     .then((response) => response.json())
-    .then((response) => console.log(response.genres))
+    .then((response) => {
+      console.log(response.genres);
+      return response;
+    })
     .catch((err) => console.error(err));
-
-  return response;
 };

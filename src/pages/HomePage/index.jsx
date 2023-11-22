@@ -34,7 +34,7 @@ const HomePage = () => {
       image: kids,
     },
   ];
-  fetchData();
+
   return (
     <div className="">
       <Hero />

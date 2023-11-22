@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MovieCard from "../MovieCard";
 import "./index.css";
 
-const Carousel = () => {
+const Carousel = ({ genreTitle }) => {
   const [scrollLeftValue, setscrollLeftValue] = useState(0);
 
   const handleLeftClick = () => {
@@ -18,7 +18,7 @@ const Carousel = () => {
       left: value,
       behavior: "smooth",
     });
-    // console.log(document.getElementById('carousel').scrollLeft);
+    // console.log(document.getElementById("carousel").scrollLeft);
   };
 
   return (
@@ -30,11 +30,15 @@ const Carousel = () => {
         }}>
         <div className={`left-icon ${scrollLeftValue <= 0 ? "d-none" : "d-block"}`}></div>
       </div>
-      <div className="carousel-container d-flex row gap" id="carousel">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 2, 2, 2, 2].map((element, index) => {
-          return <MovieCard text={element} key={index} />;
-        })}
+      <div>
+        <div className="text-white">{genreTitle}</div>
+        <div className="carousel-container d-flex row gap" id="carousel">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 2, 2, 2, 2].map((element, index) => {
+            return <MovieCard text={element} key={index} />;
+          })}
+        </div>
       </div>
+
       <div
         className="icon text-white"
         onClick={() => {

@@ -3,11 +3,7 @@ import "./index.css";
 import Carousel from "../../components/Carousel";
 
 const MovieDetailsPage = () => {
-  return (
-    <div>
-      <Carousel />
-    </div>
-  );
+  return <div>hellpozz</div>;
 };
 
 export default MovieDetailsPage;
