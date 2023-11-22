@@ -1,15 +1,14 @@
-
-
 .footer-wrapper {
+    width: 100%;
     background-color: black;
-    max-width: 1000px;
     margin: auto;
     padding: 70px 56px;
+    height: auto;
   }
   
   .footer-title {
     font-size: 16px;
-    color: #757575;
+    color: rgba(255,255,255,0.7);
     margin-bottom: 50px;
   }
   
@@ -49,7 +48,7 @@
   }
   
   .footer-link {
-    color: #757575;
+    color: rgba(255,255,255,0.7);
     margin-bottom: 20px;
     font-size: 13px;
   }

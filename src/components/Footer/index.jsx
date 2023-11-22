@@ -1,5 +1,8 @@
 import React from "react";
-import "./index.css"; 
+
+
+import "./Footer.css";
+
 
 function FooterColumn({ children, ...restProps }) {
   return (
