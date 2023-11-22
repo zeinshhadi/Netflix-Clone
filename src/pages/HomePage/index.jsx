@@ -4,12 +4,10 @@ import ComSection from "../../components/Commercial";
 import Hero from "../../components/Hero";
 import FAQs from "../../components/FAQs";
 import GetStartedForm from "../../components/GetStartedForm";
-import { Carousel } from "bootstrap";
 import tv from "./../../images/tv.png";
 import mobile from "./../../images/mobile-0819.jpg";
 import pile from "./../../images/device-pile.png";
 import kids from "./../../images/kids.png";
-import img from './../../images/bg-movie.jpg'
 import { faqData } from "./../../staticData/faq";
 
 const HomePage = () => {
@@ -35,8 +33,9 @@ const HomePage = () => {
       image: kids,
     },
   ];
-  return <div className="">
-     <Hero />
+  return (
+    <div className="">
+      <Hero />
       {commercialSectionComponents.map((element, index) => (
         <ComSection
           key={index}
@@ -49,7 +48,7 @@ const HomePage = () => {
       <div className="container">
         <div className="container">
           <div className="primary-title text-white text-center">Frequently Asked Questions</div>
-          {faqData.map((faq,index) => {
+          {faqData.map((faq, index) => {
             return (
               <>
                 <FAQs {...faq} key={index} />
@@ -58,17 +57,9 @@ const HomePage = () => {
           })}
         </div>
         <GetStartedForm />
-
-       
-        
-      
-     
-        
-
       </div>
-     
-
-  </div>;
+    </div>
+  );
 };
 
 export default HomePage;
