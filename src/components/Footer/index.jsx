@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from '../Button'
 
 import "./Footer.css";
 
@@ -54,6 +54,8 @@ function Footer() {
           <FooterLink>Investor Relations</FooterLink>
           <FooterLink>Privacy</FooterLink>
           <FooterLink>Speed Test</FooterLink>
+          <Button/>
+          <FooterLink>Netflix Lebanon</FooterLink>
         </FooterColumn>
         <FooterColumn>
           <FooterLink>Help Center</FooterLink>
