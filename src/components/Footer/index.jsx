@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"; 
+import "./index.css"; 
 
 function FooterColumn({ children, ...restProps }) {
   return (
@@ -74,4 +74,4 @@ function Footer() {
   );
 }
 
-export default FooterCompound;
+export default Footer;
