@@ -50,13 +50,21 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
 
 .center {
   align-items: center;
   justify-content: center;
+}
+.start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.start-center {
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .bold {
@@ -85,6 +93,6 @@ body {
   gap: 10px;
 }
 
-.d-block{
+.d-block {
   display: block;
 }

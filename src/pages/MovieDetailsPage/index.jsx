@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import Carousel from "../../components/Carousel";
+import Button from "../../components/Button";
 import { useParams } from "react-router-dom";
-
+import nlogo from "../../images/n-logo.png";
 const MovieDetailsPage = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState({});
@@ -28,12 +28,28 @@ const MovieDetailsPage = () => {
   }, []);
   console.log(movie);
   return (
-    <div
-      className="text-white bg-img"
-      style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})` }}>
-      {movie.original_title}
-      {/* <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt="" /> */}
-    </div>
+    <>
+      <div
+        className="text-white bg-img d-flex center"
+        style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})` }}>
+        <div className="container d-flex start column">
+          <div className="movie-title-d">{movie.original_title} </div>
+          <div className="sub-movie-title-d">{movie.original_title} </div>
+          <div className="movie-desc-d">{movie.overview}</div>
+        </div>
+      </div>
+      <div className="container d-flex space-between align-items-center under-hero">
+        <div className="left-side d-flex start start-center">
+          <div className="logo-img">
+            <img src={nlogo} alt="" />
+          </div>
+          <div className="logo-txt text-white ">Watch all you want.</div>
+        </div>
+        <div className="right-side">
+          <Button text="JOIN NOW" />
+        </div>
+      </div>
+    </>
   );
 };
 

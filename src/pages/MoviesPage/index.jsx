@@ -43,12 +43,12 @@ const MoviesPage = () => {
       </div>
 
       <div className="container">
-        {genreData.map((gener) => {
+        {genreData.map((genre) => {
           return (
             <div>
-              {/* <div className="text-white">{gener.name}</div> */}
+              {/* <div className="text-white">{genre.name}</div> */}
 
-              <Carousel genreID={gener.id} genreTitle={gener.name} />
+              <Carousel genreID={genre.id} genreTitle={genre.name} />
             </div>
           );
         })}
