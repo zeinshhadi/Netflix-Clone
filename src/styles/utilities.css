@@ -84,3 +84,7 @@ body {
 .gap {
   gap: 10px;
 }
+
+.d-block{
+  display: block;
+}
