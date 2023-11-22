@@ -1,7 +1,8 @@
 import React from "react";
 import "./index.css";
+import MovieHeader from "../../components/MovieHeader";
 const MoviesPage = () => {
-  return <div>MoviesPage</div>;
+  <MovieHeader />;
 };
 
 export default MoviesPage;
