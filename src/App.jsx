@@ -52,10 +52,10 @@ function App() {
       <div className="container">
         <div className="container">
           <div className="primary-title text-white text-center">Frequently Asked Questions</div>
-          {faqData.map((faq) => {
+          {faqData.map((faq,index) => {
             return (
               <>
-                <FAQs {...faq} />
+                <FAQs {...faq} key={index} />
               </>
             );
           })}

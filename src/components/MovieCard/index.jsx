@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
  import movieImg from "./../../images/movie.jpg"
-const MovieCard = ({img}) => {
+const MovieCard = ({img,text}) => {
   return (
     <div className='movie-card '>
         {/* <Link  ref='/'> */}
@@ -11,7 +11,7 @@ const MovieCard = ({img}) => {
                 <img src={img?img:movieImg} alt="" />
             </div>
             <div className="movie-title text-white text-center">
-                Hello
+                {text}
             </div>
             </div>   
 

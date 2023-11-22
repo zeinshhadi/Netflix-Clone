@@ -4,7 +4,7 @@
   white-space: nowrap;
   scrollbar-width: thin;
   scrollbar-color:  transparent transparent;
-  cursor: pointer;
+  /* cursor:none; */
 }
 
 .carousel-container::-webkit-scrollbar {
@@ -24,6 +24,38 @@
   background: transparent;
 }
 
-.left-icon,.right-icon{
+
+.icon{
   padding: 20px;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+
 }
+.left-icon,.right-icon{
+  background-color: var(--primary-color);
+  height: 15px;
+  width: 4px;
+  position: relative;
+  
+
+}
+.left-icon::after,.right-icon::after{
+  content: '';
+  width: 15px;
+  height: 4px;
+  background-color: inherit;
+  position: absolute;
+
+
+}
+
+.left-icon{
+  rotate: -45deg;
+}
+.right-icon{
+  rotate: 135deg;
+}
+
+
+

@@ -7,18 +7,45 @@ const Carousel = () => {
 
   }
 
-  return (
-    <div className='d-flex align-items-center'>
-      <div className='left-icon text-white'>L</div>
-      <div className="carousel-container d-flex row gap" onScroll={()=>{handleScroll()}}>
-        {
-          [1,2,3,4,5,6,7,8,9,10,2,2,2,2,2].map((element)=>{
+  const handleLeftClick=()=>{
+    
+    scroll(-1200)
+   
+  }
+  const handleRightClick=()=>{
+    scroll(1200)
 
-            return  <MovieCard />
+
+  }
+  const scroll=(value)=>{
+    document.getElementById('carousel').scrollBy({
+      top: 0, 
+      left:value, 
+      behavior: 'smooth'
+    })  
+
+  }
+
+  
+  
+
+  return (
+    <div className='d-flex align-items-center' >
+      <div className='icon text-white' onClick={()=>{handleLeftClick()}}>
+        <div className="left-icon"></div>
+      </div>
+      <div className="carousel-container d-flex row gap" id='carousel' onScroll={()=>{handleScroll()}}>
+        {
+          [1,2,3,4,5,6,7,8,9,10,2,2,2,2,2].map((element,index)=>{
+
+            return  <MovieCard text={element} key={index} />
           })
         }
         </div>
-        <div className='right-icon text-white'>R</div>
+        <div className='icon text-white' onClick={()=>{handleRightClick()}}>
+          <div className="right-icon" ></div>
+
+        </div>
 
     </div>
   )
