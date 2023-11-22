@@ -9,6 +9,7 @@ import mobile from "./../../images/mobile-0819.jpg";
 import pile from "./../../images/device-pile.png";
 import kids from "./../../images/kids.png";
 import { faqData } from "./../../staticData/faq";
+import { fetchData } from "../../helpers/genres";
 
 const HomePage = () => {
   const commercialSectionComponents = [
@@ -33,6 +34,7 @@ const HomePage = () => {
       image: kids,
     },
   ];
+  fetchData();
   return (
     <div className="">
       <Hero />

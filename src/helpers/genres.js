@@ -7,16 +7,11 @@ const options = {
   },
 };
 
-fetch("https://api.themoviedb.org/3/genre/movie/list?language=en", options)
-  .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch((err) => console.error(err));
-
-export const requestFetch = async ({ route, method, body }) => {
-  const response = fetch(`https://jsonplaceholder.typicode.com/${route}`, {
-    method: method,
-    body: JSON.stringify(body),
-  });
+export const fetchData = async () => {
+  const response = await fetch("https://api.themoviedb.org/3/genre/movie/list?language=en", options)
+    .then((response) => response.json())
+    .then((response) => console.log(response.genres))
+    .catch((err) => console.error(err));
 
   return response;
 };
