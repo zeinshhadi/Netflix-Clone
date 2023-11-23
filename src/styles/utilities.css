@@ -115,3 +115,8 @@ body {
   right: 0;
   left: 0;
 }
+
+
+.p-30{
+  padding-inline: 30px;
+}

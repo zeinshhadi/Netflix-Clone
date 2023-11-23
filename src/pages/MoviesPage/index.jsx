@@ -37,13 +37,16 @@ const MoviesPage = () => {
     <div className="container">
       <Navbar />
 
+      <div className="container p-30">
       <div className="primary-title text-white">Movies</div>
       <div className="movies-sub text-white">
         Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between.
         So many titles, so much to experience.
       </div>
+      </div>
 
-      <div className="container">
+      <div className="container" >
+    
         {genreData.map((genre) => {
           return (
             <div>
