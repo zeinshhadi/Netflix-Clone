@@ -1,6 +1,6 @@
 .sec-image img {
   width: 600px;
-  height: 440px;
+  /* height: 440px; */
 }
 
 .sec-title,
@@ -12,4 +12,15 @@
 }
 .border-t {
   border-bottom: 10px solid var(--hover-gray-color);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sec-image img {
+    width: 100%;
+    
+  }
+  .wrap-sm{
+    flex-wrap: wrap;
+  }
 }

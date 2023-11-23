@@ -8,3 +8,9 @@
 .logo {
   height: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav{
+    padding-inline: 10px;
+  }
+}

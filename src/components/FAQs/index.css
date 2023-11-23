@@ -60,3 +60,11 @@
 .rotate-45{
     rotate: 45deg;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .faq-question,.faq-answer{
+        padding: 15px;
+        font-size: 16px;}
+
+}
