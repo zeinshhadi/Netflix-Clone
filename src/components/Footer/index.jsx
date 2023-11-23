@@ -1,3 +1,4 @@
+import TranslateButton from "../TranslateButton";
 import "./Footer.css";
 
 
@@ -40,6 +41,8 @@ const Footer = () => {
               <a href={listItem.path}>{listItem.title}</a>
             </li>
           ))}
+          
+          <div className="margin-translate"> <TranslateButton /></div>
         </ul>
         <ul className="menu-list">
           {listItems2.map((listItem2, index) => (
@@ -61,8 +64,11 @@ const Footer = () => {
               <a href={listItem4.path}>{listItem4.title}</a>
             </li>
           ))}
+          
         </ul>
-        <div className="form"></div>
+        <div className="form">
+       
+        </div>
       </div>
     </div>
   );

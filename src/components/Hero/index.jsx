@@ -7,7 +7,7 @@ Hero = () => {
   return (
     <div className='hero  '>
        <div className="container">
-       <Navbar />
+       <Navbar showTranslate={true} />
        </div>
       <div className=' center d-flex column h-100'>
      

@@ -15,7 +15,10 @@
 .form {
   flex: 1;
 }
-
+.margin-translate{
+  margin-left: 20px;
+  margin-block: 30px;
+}
 @media (max-width: 740px) {
   .menu-container {
     padding: 70px 30px;

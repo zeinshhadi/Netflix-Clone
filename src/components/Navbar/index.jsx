@@ -3,7 +3,8 @@ import logo from "../../images/Netflix_Logo_PMS.png";
 import "./index.css";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-const Navbar = ({ className }) => {
+import TranslateButton from "../TranslateButton";
+const Navbar = ({ className,showTranslate }) => {
   return (
     <div className={` navbar`}>
       <div className={`${className}  d-flex space-between text-white `}>
@@ -12,9 +13,10 @@ const Navbar = ({ className }) => {
             <img src={logo} className="logo" alt="" />
           </div>
         </Link>
-        <div>
+        <div className="d-flex gap">
+          {showTranslate?(<TranslateButton />):(<Button text="JOIN NOW"/>)}
           <Link to="movies">
-            <Button text="Sign In" />
+            <Button text="SIGN IN" className={'btn-outline'}/>
           </Link>
         </div>
       </div>
