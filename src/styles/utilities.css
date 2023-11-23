@@ -96,3 +96,11 @@ body {
 .d-block {
   display: block;
 }
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.w-300{
+  width: 300px;
+}
