@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const MoreLikeThisCard = ({ moreLikeThis }) => {
   return (
     <div>
-      <div className="primary-title text-white">More Like This</div>
-      <div className="d-flex row wrap  gap">
+      <div className="primary-title text-white text-sm-center">More Like This</div>
+      <div className="d-flex row wrap  gap center-elements">
         {moreLikeThis.map((movie, index) => {
           return (
             <div className="d-flex row more-like-this-card" key={index} >

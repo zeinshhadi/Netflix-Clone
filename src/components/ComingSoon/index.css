@@ -11,3 +11,12 @@
 .movie-decription{
     color: gray;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+.coming-soon-container{
+    padding-left: 30px;
+
+}
+}
