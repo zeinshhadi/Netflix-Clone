@@ -10,6 +10,7 @@ import pile from "./../../images/device-pile.png";
 import kids from "./../../images/kids.png";
 import { faqData } from "./../../staticData/faq";
 import { fetchData } from "../../helpers/genres";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
   const commercialSectionComponents = [
@@ -59,6 +60,7 @@ const HomePage = () => {
           })}
         </div>
         <GetStartedForm />
+        <Footer />
       </div>
     </div>
   );

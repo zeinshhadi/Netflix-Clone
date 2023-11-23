@@ -4,8 +4,17 @@ import Navbar from "./components/Navbar";
 import "./styles/utilities.css";
 import "./styles/index.css";
 import ComSection from "./components/Commercial";
+<<<<<<< HEAD:src/test.js
 import tv from "./images/tv.png";
 import FAQs from "./components/FAQs";
+=======
+import tv from "../src/images/tv.png";
+import phone from "../src/images/mobile-0819.jpg";
+import pile from "../src/images/device-pile.png";
+import kids from "../src/images/kids.png";
+
+import Footer from "./components/Footer";
+>>>>>>> origin/footer:src/App.js
 function App() {
   const commercialSectionComponents = [
     {
@@ -42,6 +51,7 @@ function App() {
           />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }
