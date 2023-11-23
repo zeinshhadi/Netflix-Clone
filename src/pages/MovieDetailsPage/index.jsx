@@ -3,14 +3,15 @@ import "./index.css";
 import Button from "../../components/Button";
 import { useParams } from "react-router-dom";
 import nlogo from "../../images/n-logo.png";
-import MovieCard from './../../components/MovieCard'
+import MovieCard from "./../../components/MovieCard";
 import MoreLikeThisCard from "../../components/MoreLikeThisCard";
 import ComingSoon from "../../components/ComingSoon";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 const MovieDetailsPage = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState({});
-  const [moreLikeThis,setMoreLikeThis] = useState([]);
+  const [moreLikeThis, setMoreLikeThis] = useState([]);
 
   useEffect(() => {
     const options = {
@@ -22,17 +23,16 @@ const MovieDetailsPage = () => {
       },
     };
 
-
-    const fetchMoreLikeThis=()=>{
+    const fetchMoreLikeThis = () => {
       fetch(`https://api.themoviedb.org/3/movie/${id}/similar?language=en-US&page=1`, options)
-  .then(response => response.json())
-  .then(response => {
-    console.log(response.results)
-    setMoreLikeThis(response.results)
-    return response.results;
-  })
-  .catch(err => console.error(err));
-    }
+        .then((response) => response.json())
+        .then((response) => {
+          console.log(response.results);
+          setMoreLikeThis(response.results);
+          return response.results;
+        })
+        .catch((err) => console.error(err));
+    };
     const fetchMovieData = async () => {
       fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US`, options)
         .then((response) => response.json())
@@ -46,32 +46,29 @@ const MovieDetailsPage = () => {
     fetchMoreLikeThis();
   }, []);
 
- 
   // console.log(movie);
   return (
     <>
-      <div className="" style={{position:"relative"}}>
-      <Navbar className=' padding-top-0 nav' />
-      <div
-        className="text-white bg-img d-flex center"
-        style={{ backgroundImage: `linear-gradient(
+      <div className="" style={{ position: "relative" }}>
+        <Navbar className=" padding-top-0 nav" />
+        <div
+          className="text-white bg-img d-flex center"
+          style={{
+            backgroundImage: `linear-gradient(
           rgba(35, 35, 35, 0.85),
           rgba(35, 35, 35, 0.85)
-        ),url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})` }}>
-        
-          
-        <div className="container d-flex start column">
-          <div className="logo-title">
-            {/* <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} /> */}
+        ),url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`,
+          }}>
+          <div className="container d-flex start column">
+            <div className="logo-title">
+              {/* <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} /> */}
+            </div>
+            <div className="movie-title-d">{movie.original_title} </div>
+            <div className="sub-movie-title-d">{movie.original_title} </div>
+            <div className="movie-desc-d">{movie.overview}</div>
           </div>
-          <div className="movie-title-d">{movie.original_title} </div>
-          <div className="sub-movie-title-d">{movie.original_title} </div>
-          <div className="movie-desc-d">{movie.overview}</div>
         </div>
       </div>
-      </div>
-    
-
 
       <div className="container d-flex space-between align-items-center under-hero">
         <div className="left-side d-flex start start-center">
@@ -85,13 +82,10 @@ const MovieDetailsPage = () => {
         </div>
       </div>
       <div className="container">
-      <MoreLikeThisCard moreLikeThis={moreLikeThis}/>
-      <ComingSoon />
+        <MoreLikeThisCard moreLikeThis={moreLikeThis} />
+        <ComingSoon />
+        <Footer />
       </div>
-
-     
-      
-     
     </>
   );
 };

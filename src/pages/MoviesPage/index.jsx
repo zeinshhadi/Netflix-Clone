@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import Carousel from "../../components/Carousel";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { fetchData } from "../../helpers/genres";
 
 const MoviesPage = () => {
@@ -53,6 +54,7 @@ const MoviesPage = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };
