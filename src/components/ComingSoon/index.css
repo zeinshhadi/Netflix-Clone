@@ -1,0 +1,13 @@
+.coming-soon-container{
+    padding-right: 30px;
+}
+
+.movie-title {
+    padding:20px 0;
+    text-decoration: none;
+    
+}
+
+.movie-decription{
+    color: gray;
+}

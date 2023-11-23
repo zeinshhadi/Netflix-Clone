@@ -1,0 +1,20 @@
+.movie-card {
+    width: 300px;
+    position: relative;
+    flex: 0 0 auto;
+   
+ 
+  
+  
+        
+}
+.movie-img-wrapper{
+    /* border: 2px solid white; */
+}
+.movie-img-wrapper img{
+    width: 100%;
+
+}
+.movie-title {
+    padding: 10px;
+}

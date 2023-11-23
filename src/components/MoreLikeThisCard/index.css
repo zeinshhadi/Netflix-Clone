@@ -1,0 +1,21 @@
+.more-like-this-card {
+    width: 300px;
+    position: relative;
+    flex: 0 0 auto;
+    /* height: 200px; */
+ 
+  
+  
+        
+}
+
+.img-wrapper{
+    width: 300px;
+}
+.img-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}
+
