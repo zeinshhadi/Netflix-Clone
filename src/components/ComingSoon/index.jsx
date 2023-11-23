@@ -40,7 +40,7 @@ const ComingSoon = () => {
 
         {soonMovies.map((movie)=>{
             return   <div className="d-flex column text-white w-300 coming-soon-container">
-            <Link className='movie-title text-white' to='hello'>{movie.original_title}</Link>
+            <Link className='movie-title text-white' to={`/movieDetails/${movie.id}`}>{movie.original_title}</Link>
             <div className="movie-decription">
                {movie.overview}
             </div>

@@ -44,6 +44,8 @@ const MovieDetailsPage = () => {
     fetchMovieData();
     fetchMoreLikeThis();
   }, []);
+
+ 
   // console.log(movie);
   return (
     <>

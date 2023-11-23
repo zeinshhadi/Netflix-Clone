@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 const MoreLikeThisCard = ({ moreLikeThis }) => {
   return (
     <div>
@@ -8,10 +9,10 @@ const MoreLikeThisCard = ({ moreLikeThis }) => {
         {moreLikeThis.map((movie, index) => {
           return (
             <div className="d-flex row more-like-this-card" key={index} >
-              <div className="img-wrapper">
+              <Link to={`/movieDetails/${movie.id}`}><div className="img-wrapper">
               <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
 
-              </div>
+              </div></Link>
             </div>
           );
         })}
