@@ -47,3 +47,9 @@
   margin: 0 auto;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 600px) {
+  .menu-container,.wrapper{
+    padding: 10px 0;
+  }
+}
