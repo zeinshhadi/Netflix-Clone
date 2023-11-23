@@ -104,3 +104,14 @@ body {
 .w-300{
   width: 300px;
 }
+
+.padding-top-0{
+  padding-block: 10px;
+  padding-inline: 0;
+  position:fixed;
+  z-index: 99;
+  background-color: var(--black-color);
+  max-width: calc(100%-3rem);
+  right: 0;
+  left: 0;
+}

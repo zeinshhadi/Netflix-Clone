@@ -1,7 +1,9 @@
 .navbar {
-  /* padding: 10px 40px; */
+  padding: 10px auto;
 
-  /* background-color: var(--dark-bg); */
+}
+.navbar .nav{
+  padding-inline:70px ;
 }
 .logo {
   height: 50px;

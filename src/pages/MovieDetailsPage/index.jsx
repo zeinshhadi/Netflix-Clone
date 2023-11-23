@@ -6,6 +6,7 @@ import nlogo from "../../images/n-logo.png";
 import MovieCard from './../../components/MovieCard'
 import MoreLikeThisCard from "../../components/MoreLikeThisCard";
 import ComingSoon from "../../components/ComingSoon";
+import Navbar from "../../components/Navbar";
 const MovieDetailsPage = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState({});
@@ -49,12 +50,15 @@ const MovieDetailsPage = () => {
   // console.log(movie);
   return (
     <>
+      <div className="" style={{position:"relative"}}>
+      <Navbar className=' padding-top-0 nav' />
       <div
         className="text-white bg-img d-flex center"
         style={{ backgroundImage: `linear-gradient(
           rgba(35, 35, 35, 0.85),
           rgba(35, 35, 35, 0.85)
         ),url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})` }}>
+        
           
         <div className="container d-flex start column">
           <div className="logo-title">
@@ -65,6 +69,10 @@ const MovieDetailsPage = () => {
           <div className="movie-desc-d">{movie.overview}</div>
         </div>
       </div>
+      </div>
+    
+
+
       <div className="container d-flex space-between align-items-center under-hero">
         <div className="left-side d-flex start start-center">
           <div className="logo-img">
